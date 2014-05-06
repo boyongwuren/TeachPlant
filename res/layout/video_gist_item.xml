@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_videogist_item_icon"
+            android:layout_width="77px"
+            android:layout_height="77px"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/contentDescription"
+            android:scaleType="fitXY"
+            android:src="@drawable/video_list_item_img" />
+
+        <TextView
+            android:id="@+id/tv_videogist_item_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/video_list_item_timebg"
+            android:text="43:15" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_videogist_item_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text="测试视频" />
+
+</LinearLayout>

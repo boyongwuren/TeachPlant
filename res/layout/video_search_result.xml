@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 搜索结果列表 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_video_searchresut_allname"
+            style="@style/style_video_searchresut_title"
+            android:text="@string/video_search_result_all" />
+
+        <TextView
+            android:id="@+id/tv_video_searchresut_all"
+            style="@style/style_video_searchresut_num"
+            android:text="0" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/custom.dividercolor" />
+
+        <TextView
+            android:id="@+id/tv_video_searchresut_videosetname"
+            style="@style/style_video_searchresut_title"
+            android:text="@string/video_search_result_videoset" />
+
+        <TextView
+            android:id="@+id/tv_video_searchresut_videoset"
+            style="@style/style_video_searchresut_num"
+            android:text="0" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/custom.dividercolor" />
+
+        <TextView
+            android:id="@+id/tv_video_searchresut_videoname"
+            style="@style/style_video_searchresut_title"
+            android:text="@string/video_search_result_video" />
+
+        <TextView
+            android:id="@+id/tv_video_searchresut_video"
+            style="@style/style_video_searchresut_num"
+            android:text="0" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/custom.dividercolor" />
+
+        <TextView
+            android:id="@+id/tv_video_searchresut_teachername"
+            style="@style/style_video_searchresut_title"
+            android:text="@string/video_search_result_teacher" />
+
+        <TextView
+            android:id="@+id/tv_video_searchresut_teacher"
+            style="@style/style_video_searchresut_num"
+            android:text="0" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/custom.dividercolor" />
+
+        <TextView
+            android:id="@+id/tv_video_searchresut_introname"
+            style="@style/style_video_searchresut_title"
+            android:text="@string/video_search_result_intro" />
+
+        <TextView
+            android:id="@+id/tv_video_searchresut_intro"
+            style="@style/style_video_searchresut_num"
+            android:text="0" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_video_searchresut_order"
+                style="@style/style_video_searchresut_title"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:text="@string/video_search_result_order" />
+
+            <TextView
+                android:id="@+id/tv_video_searchresut_order_default"
+                style="@style/style_video_searchresut_num"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_video_searchresut_order"
+                android:text="@string/video_search_result_order_default" />
+
+            <TextView
+                android:id="@+id/tv_video_searchresut_order_favorable"
+                style="@style/style_video_searchresut_num"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_video_searchresut_order_default"
+                android:text="@string/video_search_result_order_favorable" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/custom.dividercolor" />
+
+    <GridView
+        android:id="@+id/gv_video_search_result"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:listSelector="@color/android_white"
+        android:numColumns="3"
+        android:padding="1.5dp" >
+    </GridView>
+
+</LinearLayout>

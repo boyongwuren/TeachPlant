@@ -1,0 +1,97 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 视频播放之本课要点列表样式 -->
+    <style name="style_video_gist">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:cacheColorHint">@color/custom.cacheColorHint</item>
+        <item name="android:divider">@color/custom.dividercolor</item>
+        <item name="android:dividerHeight">1px</item>
+    </style>
+
+    <!-- 搜索结果列表标题名称样式 -->
+    <style name="style_video_searchresut_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:textColor">@color/custom.titlename</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- 搜索结果列表各标题数值样式 -->
+    <style name="style_video_searchresut_num">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textColor">@color/custom.titlenum</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="btn_playop">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="videoInfo">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:text">@string/tempTitle</item>
+        <item name="android:layout_alignBottom">@+id/videoPreViewPic</item>
+    </style>
+
+    <style name="video_list">
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/tempTitle</item>
+        <item name="android:textColor">@color/video_list_text_color</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@drawable/video_list_btn_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="collectSubjectItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/collect_subject_item_color</item>
+        <item name="android:background">@drawable/collect_subject_item_bg</item>
+    </style>
+
+    <style name="Theme.Translucent" parent="android:style/Theme.Translucent">
+        <item name="android:windowBackground">@drawable/translucent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+    </style>
+
+</resources>

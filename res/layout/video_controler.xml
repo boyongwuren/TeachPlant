@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_video_controler"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/video_control_bg"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/prev_level_video"
+        style="@style/btn_playop"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/btn_prev_level" />
+
+    <ImageButton
+        android:id="@+id/mediacontroller_play_pause"
+        style="@style/btn_playop"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/btn_play" />
+
+    <ImageButton
+        android:id="@+id/next_level_video"
+        style="@style/btn_playop"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/btn_next_level" />
+
+    <SeekBar
+        android:id="@+id/mediacontroller_seekbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxHeight="10px"
+        android:minHeight="10px"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:thumb="@drawable/progress_thumb" />
+
+    <TextView
+        android:id="@+id/mediacontroller_time_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="00:00:00"
+        android:textColor="@color/android_white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="/"
+        android:textColor="#66FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/mediacontroller_time_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="00:00:00"
+        android:textColor="#66FFFFFF"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/btn_video_sound"
+        style="@style/btn_playop"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/btn_sound" />
+
+</LinearLayout>

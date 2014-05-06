@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <!-- 标题 -->
+
+    <LinearLayout
+        android:id="@+id/topContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" >
+
+            <ImageView
+                android:id="@+id/topCutLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/cut_line" />
+
+            <TextView
+                android:id="@+id/titleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/topCutLine"
+                android:text="@string/yuWenBtn"
+                android:textColor="#2f3541"
+                android:textSize="24px" />
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                layout="@layout/top_right_btn" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="385px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/curPlay" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottonBtnContent"
+        android:layout_below="@+id/topContent"
+        android:orientation="horizontal" >
+
+        <GridView
+            android:id="@+id/videoGridView"
+            android:layout_width="809px"
+            android:layout_height="640px"
+            android:layout_marginLeft="35px"
+            android:layout_marginRight="45px"
+            android:horizontalSpacing="38px"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="15px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/vercital_cut_line"
+            android:contentDescription="@string/contentDescription" />
+
+        <ListView
+            android:id="@+id/curPlayListView"
+            android:layout_width="395px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="17dp"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="10dp" />
+    </LinearLayout>
+
+    <!-- 底部按钮 -->
+
+    <include
+        android:id="@+id/bottonBtnContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_btn_content" />
+
+    <ProgressBar
+        android:id="@+id/loadTipProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_video_loading" />
+
+</RelativeLayout>

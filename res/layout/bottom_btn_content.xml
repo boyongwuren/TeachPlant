@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--  底部按钮部分-->
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        
+        <ImageButton 
+            android:id="@+id/homeBtn"
+            android:layout_width="119dp"
+            android:layout_height="50dp"
+            android:src="@drawable/home_btn_bg"
+            android:background="@drawable/bottom_btn_bg"
+            android:contentDescription="@string/contentDescription"
+            />
+
+        <Button 
+            android:id="@+id/yuWenBtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/yuWenBtn"
+            android:textColor="@color/bottom_btn_text_color"
+            android:textSize="24px"
+            android:background="@drawable/bottom_btn_bg"
+            android:drawableLeft="@drawable/bottom_btn_cut_line"
+            />
+        
+        <Button 
+            android:id="@+id/shuXueBtn"
+            android:layout_weight="1"
+            android:textSize="24px"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/shuXueBtn"
+            android:textColor="@color/bottom_btn_text_color"
+            android:background="@drawable/bottom_btn_bg"
+            android:drawableLeft="@drawable/bottom_btn_cut_line"
+            />
+
+        <Button 
+            android:id="@+id/yingYuBtn"
+            android:textSize="24px"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="@color/bottom_btn_text_color"
+            android:text="@string/yingYuBtn"
+            android:background="@drawable/bottom_btn_bg"
+            android:drawableLeft="@drawable/bottom_btn_cut_line"
+            />
+
+        <Button 
+            android:id="@+id/wuLiBtn"
+            android:textSize="24px"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/wuLiBtn"
+            android:textColor="@color/bottom_btn_text_color"
+            android:background="@drawable/bottom_btn_bg"
+            android:drawableLeft="@drawable/bottom_btn_cut_line"
+            />
+
+        <Button 
+            android:id="@+id/huaXueBtn"
+            android:textSize="24px"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/huaXueBtn"
+            android:background="@drawable/bottom_btn_bg"
+            android:textColor="@color/bottom_btn_text_color"
+            android:drawableLeft="@drawable/bottom_btn_cut_line"
+            />
+
+        <Button 
+            android:id="@+id/shengWuBtn"
+            android:textSize="24px"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/shengWuBtn"
+            android:background="@drawable/bottom_btn_bg"
+            android:drawableLeft="@drawable/bottom_btn_cut_line"
+            android:textColor="@color/bottom_btn_text_color"
+            />
+
+        <Button 
+            android:id="@+id/diLiBtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="24px"
+            android:layout_height="50dp"
+            android:textColor="@color/bottom_btn_text_color"
+            android:text="@string/diLiBtn"
+            android:background="@drawable/bottom_btn_bg"
+            android:drawableLeft="@drawable/bottom_btn_cut_line"
+            />
+
+        <Button 
+            android:id="@+id/liShiBtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="@color/bottom_btn_text_color"
+            android:textSize="24px"
+            android:text="@string/liShiBtn"
+            android:background="@drawable/bottom_btn_bg"
+            android:drawableLeft="@drawable/bottom_btn_cut_line"
+            />
+
+        <Button 
+            android:id="@+id/zhengZhiBtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/zhengZhiBtn"
+            android:textColor="@color/bottom_btn_text_color"
+            android:background="@drawable/bottom_btn_bg"
+            android:textSize="24px"
+            android:drawableLeft="@drawable/bottom_btn_cut_line"
+            />
+
+        <Button 
+            android:id="@+id/qiTaBtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/qiTaBtn"
+            android:textSize="24px"
+            android:textColor="@color/bottom_btn_text_color"
+            android:background="@drawable/bottom_btn_bg"
+            android:drawableLeft="@drawable/bottom_btn_cut_line"
+            />
+        
+    </LinearLayout>
+

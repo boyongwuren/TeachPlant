@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_marginLeft="10dp"
+    >
+    
+    <ImageView 
+        android:id="@+id/preViewPic"
+        android:layout_width="142px"
+        android:layout_height="142px"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/error_net_pic"
+        android:layout_marginTop="15dp"
+        />
+    
+    <TextView
+        android:id="@+id/videoSetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/preViewPic"
+        android:layout_alignRight="@+id/preViewPic"
+        android:layout_below="@+id/preViewPic"
+        android:layout_marginTop="10dp"
+        android:text="@string/downLoading"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="30px" />
+    
+    <ListView 
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/preViewPic"
+        android:layout_marginLeft="10dp"
+        android:divider="@null"
+        >
+        
+        
+    </ListView>
+    
+
+</RelativeLayout>

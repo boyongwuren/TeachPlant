@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="169px"
+    >
+    
+    <RelativeLayout 
+        android:id="@+id/imageContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        >
+        <ImageView 
+            android:id="@+id/videoPreView"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/error_net_mid_pic"
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/play_btn"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_toRightOf="@+id/imageContent"
+        android:layout_toLeftOf="@+id/deleteItemBtn"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+         >
+        <LinearLayout
+        		android:layout_width="match_parent"
+        		android:layout_height="0dp"
+        		android:layout_weight="1"
+		        android:orientation="horizontal"
+             >
+            <TextView 
+                android:id="@+id/videoSetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/curPlay"
+                android:textColor="#333333"
+                android:textSize="20px"
+                />
+
+            <TextView 
+                android:id="@+id/subjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wuLiBtn"
+                android:textColor="#333333"
+                android:textSize="20px"
+		        android:layout_marginLeft="20dp"
+                />
+
+            <TextView 
+                android:id="@+id/requireName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contentDescription"
+                android:textColor="#333333"
+                android:textSize="20px"
+		        android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+        
+        <TextView 
+            android:id="@+id/videoName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+        	android:layout_weight="1"
+            android:text="@string/vitamio_theme_app_name"
+            android:textColor="#333333"
+            android:textSize="20px"
+            android:layout_marginTop="10px"
+            />
+
+     
+        <TextView 
+            android:id="@+id/teacherName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+        	android:layout_weight="2"
+            android:text="@string/contentDescription"
+            android:textColor="#333333"
+            android:textSize="20px"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            />
+       
+    </LinearLayout>
+    
+    <ImageButton 
+        android:id="@+id/deleteItemBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete_btn_nom"
+        android:contentDescription="@string/contentDescription"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

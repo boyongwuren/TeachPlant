@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subjectGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioButton
+        style="@style/collectSubjectItem"
+        android:text="@string/allSubject" />
+
+    <RadioButton
+        style="@style/collectSubjectItem"
+        android:text="@string/yuWenBtn" />
+
+    <RadioButton
+        style="@style/collectSubjectItem"
+        android:text="@string/shuXueBtn" />
+
+    <RadioButton
+        style="@style/collectSubjectItem"
+        android:text="@string/yingYuBtn" />
+
+    <RadioButton
+        style="@style/collectSubjectItem"
+        android:text="@string/wuLiBtn" />
+
+    <RadioButton
+        style="@style/collectSubjectItem"
+        android:text="@string/huaXueBtn" />
+
+    <RadioButton
+        style="@style/collectSubjectItem"
+        android:text="@string/shengWuBtn" />
+
+    <RadioButton
+        style="@style/collectSubjectItem"
+        android:text="@string/diLiBtn" />
+
+    <RadioButton
+        style="@style/collectSubjectItem"
+        android:text="@string/liShiBtn" />
+
+    <RadioButton
+        style="@style/collectSubjectItem"
+        android:text="@string/zhengZhiBtn" />
+
+    <RadioButton
+        style="@style/collectSubjectItem"
+        android:text="@string/qiTaBtn" />
+
+</RadioGroup>

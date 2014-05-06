@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="167px" 
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/videoSetPic"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/error_net_pic" />
+
+        <TextView
+            android:id="@+id/videoSetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/videoSetPic"
+            android:text="@string/cancelBtnTxt"
+            android:textColor="#333333"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/videoNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/videosSize"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/videoSetPic"
+            android:text="@string/diLiBtn"
+            android:textColor="#333333"
+            android:textSize="25px" />
+
+        <TextView
+            android:id="@+id/videosSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/videoSetPic"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/videoSetPic"
+            android:gravity="bottom"
+            android:text="@string/yuWenBtn"
+            android:textColor="#333333"
+            android:textSize="25px" />
+
+        <ImageButton
+            android:id="@+id/openListBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/go_download_list_btn"
+            android:contentDescription="@string/contentDescription" />
+    </RelativeLayout>
+
+</RelativeLayout>

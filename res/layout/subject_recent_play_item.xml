@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="342px"
+    android:layout_height="138px" >
+    
+    <ImageView 
+        android:id="@+id/previewPic"
+        android:layout_width="342px"
+        android:layout_height="138px"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/error_net_big_pic"
+        android:scaleType="fitXY"
+        />
+    
+    <TextView 
+        android:id="@+id/videoSetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yingYuBtn"
+        android:textColor="#ffffff"
+        android:textSize="20px"
+        android:layout_marginLeft="5dp"
+        />
+    
+    <TextView 
+        android:id="@+id/videoType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yingYuBtn"
+        android:layout_toRightOf="@+id/videoSetName"
+        android:layout_marginLeft="15dp"
+        android:textColor="#ffffff"
+        android:textSize="20px"
+        />
+
+    <TextView 
+        android:id="@+id/videoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yingYuBtn"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:textSize="24px"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    
+     <ProgressBar 
+         android:id="@+id/timeProgressBar"
+         android:layout_width="match_parent"
+         android:layout_height="4dp"
+         style="?android:attr/progressBarStyleHorizontal"
+         android:max="100"
+         android:progress="30"
+         android:layout_alignLeft="@+id/previewPic"
+         android:layout_alignRight="@+id/previewPic"
+         android:layout_alignParentBottom="true"
+         />
+     
+     <TextView 
+        android:id="@+id/totalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yingYuBtn"
+        android:layout_alignRight="@+id/previewPic"
+        android:textColor="#ffffff"
+        android:textSize="18px"
+        android:layout_alignParentBottom="true"
+		android:paddingBottom="8dp"        
+		android:layout_marginRight="5dp"
+        />
+
+    <TextView 
+        android:id="@+id/xieGan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xieGan"
+        android:layout_toLeftOf="@+id/totalTime"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="8dp"
+        />
+
+    <TextView 
+        android:id="@+id/playTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shuXueBtn"
+        android:layout_toLeftOf="@+id/xieGan"
+        android:textColor="#ffd237"
+        android:textSize="18px"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="8dp"
+        />
+    
+
+</RelativeLayout>

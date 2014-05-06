@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="210px"
+    android:layout_height="272px" 
+    >
+
+    <RelativeLayout
+        android:layout_width="210px"
+        android:layout_height="272px" >
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/preViewImg"
+                android:layout_width="210px"
+                android:layout_height="200px"
+                android:contentDescription="@string/contentDescription"
+                android:scaleType="fitXY"
+                android:src="@drawable/error_net_pic" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/play_btn" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/videName"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/yuWenBtn"
+            android:textColor="#000000"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/videoType"
+            android:layout_width="100px"
+            android:layout_height="20px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/yuWenBtn"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="18px" />
+
+        <TextView
+            android:id="@+id/tearchName"
+            android:layout_width="120px"
+            android:singleLine="true"
+            android:layout_height="20px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/top"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/yuWenBtn"
+            android:textColor="#999999"
+            android:gravity="right"
+            android:textSize="18px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

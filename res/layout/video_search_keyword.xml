@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 搜索关键词列表 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.4"
+            android:drawableLeft="@drawable/cut_line"
+            android:drawablePadding="5dp"
+            android:text="@string/video_search_hot"
+            android:textColor="@color/android_dark_blue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:drawableLeft="@drawable/cut_line"
+            android:drawablePadding="5dp"
+            android:text="@string/video_search_history"
+            android:textColor="@color/android_dark_blue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_video_search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/btn_delete"
+            android:drawablePadding="5dp"
+            android:text="@string/video_search_clear"
+            android:textColor="@color/android_dark_blue"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/custom.dividercolor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <GridView
+            android:id="@+id/gv_video_search_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:listSelector="@color/android_white"
+            android:numColumns="2"
+            android:padding="1.5dp" >
+        </GridView>
+
+        <GridView
+            android:id="@+id/gv_video_search_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:listSelector="@color/android_white"
+            android:numColumns="2"
+            android:padding="1.5dp" >
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

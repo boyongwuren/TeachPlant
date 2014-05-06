@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+	   
+	   <RelativeLayout 
+	        android:id="@+id/top"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+		    <ImageView 
+		        android:id="@+id/preViewImg"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/error_net_big_pic"
+		        android:contentDescription="@string/contentDescription"
+		        />
+		    
+		    <ImageView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/play_btn"
+		        android:layout_centerInParent="true"
+		        android:contentDescription="@string/contentDescription"
+		        />
+		    
+		    <TextView 
+		        android:id="@+id/timeInfo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/yuWenBtn"
+		        android:textSize="18px"
+		        android:textColor="#ffd237"
+		        android:layout_alignBottom="@+id/preViewImg"
+		        android:layout_toLeftOf="@+id/xieGan"
+		        android:layout_marginBottom="5dp"
+		        />
+		    
+		    <TextView 
+		        android:id="@+id/xieGan"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/xieGan"
+		        android:textColor="#ffffff"
+		        android:textSize="18px"
+		        android:layout_alignBottom="@+id/preViewImg"
+		        android:layout_toLeftOf="@+id/totalTime"
+		        android:layout_marginBottom="5dp"
+		        />
+		    
+		    <TextView 
+		        android:id="@+id/totalTime"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/shuXueBtn"
+		        android:textSize="18px"
+		        android:textColor="#ffffff"
+		        android:layout_alignRight="@+id/preViewImg"
+		        android:layout_alignBottom="@+id/preViewImg"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginBottom="5dp"
+		        />
+	    
+	    </RelativeLayout>
+
+	   
+	    <ProgressBar 
+	        android:id="@+id/timeProgressBar"
+	        style="?android:attr/progressBarStyleHorizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="3dp"
+	        android:max="100"
+	        android:progress="30"
+	        android:layout_below="@+id/top"
+	        android:layout_alignRight="@+id/top"
+	        />	  
+	        
+	  <TextView 
+        android:id="@+id/videName"
+        android:layout_below="@+id/timeProgressBar"
+        android:text="@string/yuWenBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:textSize="22px"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"/>
+	    
+	  <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/videName"
+        android:layout_alignRight="@+id/top"
+        >
+        
+        <TextView 
+            android:id="@+id/videoType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yuWenBtn"
+            android:textColor="#999999"
+            android:textSize="18px"
+            />
+        
+        <TextView 
+            android:id="@+id/tearchName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yuWenBtn"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/videoType"
+            />
+    </RelativeLayout>
+    
+
+</RelativeLayout>

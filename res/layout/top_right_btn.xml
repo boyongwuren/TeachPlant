@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/top_right_bottom_bg"
+            android:gravity="center"
+            >
+            <TextView 
+                android:id="@+id/collectTxt"
+                android:text="@string/collectTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/collect_bg"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView 
+                android:id="@+id/searchTxt"
+                android:text="@string/searchTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/search_bg"
+                />
+            <TextView 
+                android:id="@+id/downLoadManager"
+                android:text="@string/downLoadManager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/down_load_bg"
+                />
+        </LinearLayout>

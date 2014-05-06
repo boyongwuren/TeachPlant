@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<drawable name="white">#FFFFFF</drawable>
+	<drawable name="black">#000000</drawable>
+	<drawable name="translucent">#90000000</drawable>
+	<drawable name="transparent">#00000000</drawable>
+	<drawable name="gray">#90000000</drawable>
+	<drawable name="blue">#90ADD8E6</drawable>
+	<color name="android_white">#FFFFFF</color>
+	<color name="android_light_blue">#317cd3</color>
+	<color name="android_black">#000000</color>
+	<color name="android_gray">#808080</color>
+	<color name="android_download">#97C7F7</color>
+	<color name="android_dark_blue">#062438</color>
+	<color name="android_red">#FF0000</color>
+	<color name="android_blue">#00BFFF</color>
+	<color name="android_yellow">#FFFF00</color>
+	<color name="background">#FF000000</color>
+	<color name="control_back">#AA00003D</color>
+	<color name="dialog_back">#330000FF</color>
+	<color name="custom.cacheColorHint">#00000000</color>
+	<color name="custom.dividercolor">#FF909090</color>
+	<color name="custom.titlename">#FF333333</color>
+	<color name="custom.titlenum">#FF999999</color>
+	<color name="search_keyword">#FF36487B</color>
+	<drawable name="translucent_background">#99000000</drawable>
+</resources>

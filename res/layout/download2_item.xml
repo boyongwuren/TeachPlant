@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="78px" 
+    android:background="@drawable/collect_page_bg"
+    >
+    
+    <TextView 
+        android:id="@+id/subjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yuWenBtn"
+        android:textSize="20px"
+        android:textColor="#333333"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView 
+        android:id="@+id/requireName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yuWenBtn"
+        android:layout_marginLeft="120dp"
+        android:textColor="#333333"
+        android:textSize="20px"
+        />
+
+    <TextView 
+        android:id="@+id/videoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yuWenBtn"
+        android:layout_marginLeft="250dp"
+        android:textSize="20px"
+        android:textColor="#333333"
+        />
+
+    <TextView 
+        android:id="@+id/teacherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yuWenBtn"
+        android:layout_below="@+id/subjectName"
+        android:textSize="18px"
+        android:textColor="#999999"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView 
+        android:id="@+id/videoSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yuWenBtn"
+        android:layout_below="@+id/subjectName"
+        android:textSize="18px"
+        android:textColor="#999999"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="200dp"
+        />
+
+    <TextView 
+        android:id="@+id/speedTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yuWenBtn"
+        android:layout_below="@+id/subjectName"
+        android:textSize="18px"
+        android:textColor="#999999"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="550dp"
+        />
+    
+    <ProgressBar 
+        android:id="@+id/downLoadingProgress"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="30"
+        android:max="100"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        />
+    
+    <ImageButton 
+        android:id="@+id/playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/contentDescription"
+        android:background="@drawable/btn_video_list_item_play"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        />
+
+    <ImageButton 
+        android:id="@+id/downLoadBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/contentDescription"
+        android:background="@drawable/down_load_page_down_load"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        />
+
+    <ImageButton 
+        android:id="@+id/pauseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/contentDescription"
+        android:background="@drawable/pause_btn"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="3dp"
+        />
+    
+</RelativeLayout>

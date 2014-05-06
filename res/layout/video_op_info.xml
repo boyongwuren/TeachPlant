@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_video_op"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipChildren="true"
+    android:clipToPadding="false" >
+
+    <com.nd.teacherplatform.view.InOutRelativeLayout
+        android:id="@+id/composer_buttons_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clipChildren="false"
+        android:clipToPadding="false" >
+
+        <com.nd.teacherplatform.view.InOutImageButton
+            android:id="@+id/video_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="135dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/img_video_collect"
+            android:visibility="gone" />
+
+        <com.nd.teacherplatform.view.InOutImageButton
+            android:id="@+id/video_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="90dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/img_video_download"
+            android:visibility="gone" />
+
+        <com.nd.teacherplatform.view.InOutImageButton
+            android:id="@+id/video_gist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="45dp"
+            android:layout_marginRight="90dp"
+            android:background="@drawable/img_video_gist"
+            android:visibility="gone" />
+
+        <com.nd.teacherplatform.view.InOutImageButton
+            android:id="@+id/video_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/img_video_list"
+            android:visibility="gone" />
+    </com.nd.teacherplatform.view.InOutRelativeLayout>
+
+    <com.nd.teacherplatform.view.InOutRelativeLayout
+        android:id="@+id/composer_buttons_show_hide_button"
+        android:layout_width="60dp"
+        android:layout_height="57.33333333333333dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+
+        <ImageView
+            android:id="@+id/composer_buttons_show_hide_button_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/video_op_normal" />
+    </com.nd.teacherplatform.view.InOutRelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <!-- 头顶标题按钮部分 -->
+
+    <RelativeLayout
+        android:id="@+id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg" >
+
+        <ImageView
+            android:id="@+id/topBarCutLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/cut_line" />
+
+        <TextView
+            android:id="@+id/recentWatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/topBarCutLine"
+            android:text="@string/recentWatch" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            layout="@layout/top_right_btn" />
+    </RelativeLayout>
+
+    <!-- 最近观看部分 -->
+
+    <RelativeLayout
+        android:id="@+id/gridViewContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topTitle" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <com.nd.teacherplatform.view.RecentPlayItemView
+                android:id="@+id/firstRecentPlayItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <GridView
+                android:id="@+id/recentWatchGridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:listSelector="@null"
+                android:numColumns="3" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/noRecentWatchPic"
+            android:layout_width="match_parent"
+            android:layout_height="219dp"
+            android:contentDescription="@string/contentDescription"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_recent_watch_pic" />
+    </RelativeLayout>
+
+    <!-- 推荐视频标题部分 -->
+
+    <RelativeLayout
+        android:id="@+id/recommendVideoTitlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridViewContent"
+        android:background="@drawable/top_bg" >
+
+        <ImageView
+            android:id="@+id/recommendVideoCutLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/cut_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/recommendVideoCutLine"
+            android:gravity="center_vertical"
+            android:text="@string/recommendVideo" />
+    </RelativeLayout>
+
+    <!-- 推荐视频部分 -->
+
+    <GridView
+        android:id="@+id/recommendVideoGridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomBar"
+        android:layout_below="@+id/recommendVideoTitlebar"
+        android:layout_marginLeft="23dp"
+        android:numColumns="5" />
+
+    <!-- 底部按钮部分 -->
+
+    <include
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_btn_content" />
+
+    <ProgressBar
+        android:id="@+id/loadTipProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress_video_loading" />
+
+</RelativeLayout>

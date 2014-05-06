@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/collect_page_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/titleContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/collect_top_bg" >
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_back" />
+
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/download_title_pic_bg"
+            android:contentDescription="@string/contentDescription"
+            />
+        
+        <RadioGroup
+            android:id="@+id/downGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/hasDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/download_title_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/hasDownLoad"
+                android:textColor="@color/download_title_color"
+                android:textSize="24px" />
+
+            <RadioButton
+                android:id="@+id/downLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/download_title_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/downLoading"
+                android:textColor="@color/download_title_color"
+                android:textSize="24px" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/deleteAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:text="@string/deleteAll"
+            android:textColor="#ffffff"
+            android:textSize="24px" />
+    </RelativeLayout>
+    
+    <include 
+        layout="@layout/subject_list" 
+        android:layout_width="wrap_content" 
+        android:layout_height="match_parent" 
+        android:layout_below="@+id/titleContent"/>
+    
+    <RelativeLayout 
+        android:id="@+id/framentContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/subjectGroup"
+        android:layout_below="@+id/titleContent"
+        android:layout_above="@+id/storyInfo"
+        android:background="#ffffff"
+        >
+        
+	    <ImageView 
+	        android:id="@+id/noCollectPic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/no_download"
+	        android:layout_centerInParent="true"
+	        android:contentDescription="@string/contentDescription"
+	        />
+        
+    </RelativeLayout>
+    
+    
+    <include 
+        android:id="@+id/storyInfo"
+        layout="@layout/story_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"/>"
+
+</RelativeLayout>

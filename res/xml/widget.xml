@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pandawidgets>
+    <!-- packageName 小插件对应的包名 -->
+    <!-- layout 小插件显示界面的布局文件名，对应layout目录的布局文件名 -->
+    <!-- previewName 小插件在插件列表中的预览图片名称 -->
+    <!-- title 小插件名称，对应的是string.xml文件中配置的name属性，不是直接显示的字串 -->
+    <!-- spanX 小插件水平横跨的单元格数 -->
+    <!-- spanY 小插件垂直横跨的单元格数 -->
+    
+    <!-- 4x1规格小插件 -->
+	<pandawidget 
+		packageName="com.nd.pad.onlinevideo" 
+		layout="studentpad_edumedia_widget"
+		previewName="edu_video_widget_preview"
+		title="app_name"
+		spanX="6"
+		spanY="4"/>
+</pandawidgets>
